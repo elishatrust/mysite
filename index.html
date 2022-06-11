@@ -7,31 +7,34 @@
     <title>Elisha's Personal Site</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <style>
         body{background: silver;margin: 0;padding: 0;}
-        .profile img{height: 200px;margin-right:30px;border-radius: 50%;}
+        p,td,li{text-align: justify;}
+        .profile img{height: 200px;padding:5px;border-radius: 50%;}
+        @media (max-width: 550px) { 
+            h2,h3{font-size: 20px;}
+            .profile img{height: 150px;}
+        }
     </style>
 </head>
 <body class="bg-light">
 <div class="all container p-5 my-5 card">
     <!-- profile -->
     <div class="profile">
-        <table cellspacing="20">
-            <tr>
-                <td><img src="img/dpa.jpg" alt="Elisha's Profile Picture"></td>
-                <td>
-                    <h2>Elisha Bwilukiro R,</h2>
-                    <p class="lead">Software Developer</p>
-                    <p>Former student of <em><strong>
-                        <a href="http://www.udsm.ac.tz">University of Dar es Salaam</a>,</strong>
-                    <br><a href="http://www.coict.udsm.ac.tz">College of Information & Communication Technologies</a>,
-                    <br><a href="https://cse.udsm.ac.tz/">Department of Computer Science & Engineering</a>
-                    <br>BSc. In Computer Science</em></p>
-                </td>
-            </tr>
-        </table>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/dpa.jpg" alt="Elisha's Profile Picture">
+            </div>
+            <div class="col-md-8">
+                <h2>Elisha Bwilukiro R,</h2>
+                <p class="lead">Software Developer</p>
+                <p>Former student of <em><strong>
+                    <a href="http://www.udsm.ac.tz">University of Dar es Salaam</a>,</strong>
+                <br><a href="http://www.coict.udsm.ac.tz">College of Information & Communication Technologies</a>,
+                <br><a href="https://cse.udsm.ac.tz/">Department of Computer Science & Engineering</a>
+                <br>BSc. In Computer Science</em></p>
+            </div>
+        </div>
     </div>
     <hr size="4" noshade>
 
@@ -58,37 +61,39 @@
     <!-- educational-journey -->
     <div class="educational">
         <h3>Educational Journey</h3>
-        <table class="table" cellspacing="0" border="1">
-            <thead>
-                <tr>
-                    <th><strong>SCHOOL/COLLEGE</strong></th>
-                    <th><strong>YEAR</strong></th>
-                    <th><strong>AWARDED</strong></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="http://www.udsm.ac.tz">University of Dar es Salaam</a></td>
-                    <td>2017 - 2020</td>
-                    <td>Bachelor's degree of science in Computer Science</td>
-                </tr>
-                <tr>
-                    <td><a href="#">Musoma Technical High School</a></td>
-                    <td>2013 - 2015</td>
-                    <td>Certificate of Advanced Education Examination</td>
-                </tr>
-                <tr>
-                    <td><a href="#">Nyamanoro Secondary School</a></td>
-                    <td>2008 - 2012</td>
-                    <td>Certificate of Secondary Education Examination</td>
-                </tr>
-                <tr>
-                    <td><a href="#">Mkudi Primary School</a></td>
-                    <td>2001 - 2007</td>
-                    <td>Certificate of Primary Education Examination</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table" cellspacing="0" border="1">
+                <thead>
+                    <tr>
+                        <th>SCHOOL/COLLEGE</th>
+                        <th>YEAR</th>
+                        <th>AWARDED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="http://www.udsm.ac.tz">University of Dar es Salaam</a></td>
+                        <td>2017 - 2020</td>
+                        <td>Bachelor's degree of science in Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Musoma Technical High School</a></td>
+                        <td>2013 - 2015</td>
+                        <td>Certificate of Advanced Education Examination</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Nyamanoro Secondary School</a></td>
+                        <td>2008 - 2012</td>
+                        <td>Certificate of Secondary Education Examination</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Mkudi Primary School</a></td>
+                        <td>2001 - 2007</td>
+                        <td>Certificate of Primary Education Examination</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <hr size="4" noshade>
 
@@ -152,7 +157,7 @@
     <hr size="4" noshade>
 
     <div class="end text-center text-info">
-        <p><a href="index.html" class="btn btn-default">Move to Top</a></p>
+        <a href="index.html" class="btn btn-default">Move to Top</a>
     </div>
 
 </div>
