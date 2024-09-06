@@ -103,14 +103,14 @@
         <p>I am Software Developer expert with field experience and competence in the following sub-field</p>
         <ul>
             <li>System analysis, design, development and management</li>
-            <li>Programming Languages ( Java SE, C++, C, PHP, JavaScript, Python, SQL )</li>
-            <li>Frameworks & Libraries  ( Laravel, Codeigniter, Reactjs, Nodejs, jQuery, Tailwindcss & Bootstrap )</li>
-            <li>Scripts Languages ( HTML, CSS, SCSS )</li>
-            <li>Database Management System ( Oracle, MySQL, MariaDB, PostgreSQL, SQLite )</li>
-            <li>Tool  ( Git, Github, Wordpress, Elementor, FTP, Microsoft office, Adobe Photoshop, MSVisio, Draw.io, Star UML, SPSS Statistics )  </li>  
+            <li>Programming Languages (Java SE, C++, C, PHP, JavaScript, Python, SQL)</li>
+            <li>Frameworks & Libraries  (Laravel, Codeigniter, Reactjs, Nodejs, jQuery, Tailwindcss & Bootstrap)</li>
+            <li>Scripts Languages (HTML, CSS, SCSS)</li>
+            <li>Database Management System (Oracle, MySQL, MariaDB, PostgreSQL, SQLite)</li>
+            <li>Tool  (Git, Github, Wordpress, Elementor, FTP, Microsoft office, Adobe Photoshop, MSVisio, Draw.io, Star UML, SPSS Statistics)  </li>  
             <li>Full Linux course</li>
-            <li>Cloud Services ( AWS, Azure ) </li>
-            <li>Platform  ( Windows and Linux ) </li> 
+            <li>Cloud Services (AWS, Azure) </li>
+            <li>Platform  (Windows and Linux) </li> 
         </ul>
     </div>
     <hr size="4" noshade>
@@ -169,17 +169,47 @@
 </div>
     
 </body>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/66cdfec550c10f7a00a0fa80/1i6aamdk7';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
+    
+       
+    <script>
+        //   Date picker
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+
+        //   Whatsapp chat widget
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21528';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled":true,
+            "chatButtonSetting":{
+                "backgroundColor":"#4dc247",
+                "ctaText":"",
+                "borderRadius":"25",
+                "marginRight":"0",
+                "marginBottom":"50",
+                "marginLeft":"20",
+                "position":"right",
+            },
+            "brandSetting":{
+                "brandName":"ELISHA BWILUKIRO",
+                "brandSubTitle":"Typically replies within a day",
+                "brandImg":"https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "welcomeText":"Hi there!\nHow can I help you?",
+                "messageText":"Hello Elisha, I have a question about services",
+                "backgroundColor":"#0a5f54",
+                "ctaText":"Start Chat",
+                "borderRadius":"25",
+                "autoShow":false,
+                "phoneNumber":"255653064129"
+            }
+        };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script> 
 </html>
